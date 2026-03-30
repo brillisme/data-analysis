@@ -1,0 +1,15 @@
+clc;clear;
+a=2; b=3;
+a1=4; b1=18;
+c=6; d=3;
+e=6; f=5; g=56;
+n=100; p=0.1;
+A=n*(a+b)+n*p*(a1+b1)+n*(1-p)*(c+d)+n*(p-p*p)*(a1+b1);
+A1=n*(1-p)*(1-p)*(g-a1-b1)-A;
+B=n*(a+b)+n*p*(a1+b1)+n*(1-p)*c+n*(p-p*p)*(e+f+a1+b1)+n*(p-p*p)*(a1+b1+c+d);
+B1=n*(1-p)*(g-a1-b1)-B;
+h=3*p-3*p*p+p*p*p;
+C=n*(c+d)+n*(a1+b1)*h;
+C1=n*(1-p)*(1-p)*(1-p)*(g-a1-b1)-C;
+D=n*c+n*(e+f+a1+b1)*h+n*(a1+b1+c+d)*h;
+D1=n*(g-a1-b1)-D;
